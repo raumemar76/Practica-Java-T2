@@ -272,12 +272,12 @@ public class Practica_ObligatoriaT2 {
                             if (importePagado < totalAPagar) {
                                 System.out.println("Error: El importe pagado es insuficiente. Checkout cancelado.");
                             } else {
-                                // 7. Calcular y mostrar cambio (Requisito 6a) [cite: 229]
+                                // 7. Calcular y mostrar cambio 
                                 double cambio = importePagado - totalAPagar;
                                 System.out.printf("Pago recibido. Cambio a devolver: %.2f€\n", cambio);
 
                                 // Cálculo de cambio en céntimos (para evitar errores con decimales)
-                                // Se usan operadores aritméticos básicos / y % (módulo) [cite: 511]
+                                // Se usan operadores aritméticos básicos / y % (módulo) 
                                 int cambioEnCentimos = (int) Math.round(cambio * 100);
                                 System.out.println("Desglose del cambio:");
 
@@ -303,7 +303,7 @@ public class Practica_ObligatoriaT2 {
                                 cambioEnCentimos = cambioEnCentimos % 100;
                                 // Podríamos seguir con 50, 20, 10, 5, 2, 1 céntimos si quisiéramos
 
-                                // 8. Liberar habitación y actualizar contadores (Requisito 6b)
+                                // 8. Liberar habitación y actualizar contadores 
                                 // Usamos otro 'switch' para PONER A CERO la habitación correcta
                                 switch (numHabitacionCheckout) {
                                     case 1: ocupada1 = false; huesped1 = ""; fechaEntrada1 = null; break;
@@ -390,4 +390,5 @@ public class Practica_ObligatoriaT2 {
         System.out.println("Gracias por usar el software del Hotel Ciudad de Martos.");
 
     }
+
 }
