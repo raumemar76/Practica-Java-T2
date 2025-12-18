@@ -246,7 +246,7 @@ public class Practica_ObligatoriaT2 {
                             double iva = subtotal * 0.21;
                             double totalAPagar = subtotal + iva;
 
-                            // 5. Mostrar Factura (Requisito 5)
+                            // 5. Mostrar Factura 
                             // Creamos un formateador para mostrar la fecha como dd/MM/yyyy
                             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
@@ -265,7 +265,7 @@ public class Practica_ObligatoriaT2 {
                             System.out.printf("TOTAL A PAGAR: %.2f€\n", totalAPagar);
                             System.out.println("=================================================");
 
-                            // 6. Procesar Pago (Requisito 6)
+                            // 6. Procesar Pago 
                             System.out.print("\nIntroduce el importe en efectivo pagado por el cliente: ");
                             double importePagado = Double.parseDouble(scanner.nextLine());
 
@@ -392,3 +392,4 @@ public class Practica_ObligatoriaT2 {
     }
 
 }
+
